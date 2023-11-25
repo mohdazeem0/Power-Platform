@@ -34,6 +34,29 @@
             RadiusTopRight: =8
             ZIndex: =1
 
+            Header1 As Header:
+                BasePaletteColor: =RGBA(39, 113, 194, 1)
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                Height: =75
+                IsLogoVisible: =true
+                IsProfilePictureVisible: =true
+                IsTitleVisible: =true
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='OIP (1)'
+                LogoTooltip: =""
+                OnSelectLogo: =false
+                Style: ='Header.Style'.Primary
+                Title: ="Employee Travel Request"
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
         MainContainer1 As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)

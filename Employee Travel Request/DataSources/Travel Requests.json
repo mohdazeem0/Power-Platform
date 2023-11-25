@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr235_tables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr235_table",
+    "Name": "Travel Requests",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr235_approvalstatus": "Approval Status",
+      "cr235_departure": "Departure",
+      "cr235_destination": "Destination",
+      "cr235_id": "ID",
+      "cr235_purposeoftravel": "Purpose of Travel",
+      "cr235_returndate": "Return Date",
+      "cr235_table_AsyncOperations": "System Jobs",
+      "cr235_table_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr235_table_DuplicateBaseRecord": "Duplicate Records (cr235_table_DuplicateBaseRecord)",
+      "cr235_table_DuplicateMatchingRecord": "Duplicate Records (cr235_table_DuplicateMatchingRecord)",
+      "cr235_table_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr235_table_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr235_table_ProcessSession": "Process Sessions",
+      "cr235_table_SyncErrors": "Sync Errors",
+      "cr235_tableid": "Table",
+      "cr235_transportationmode": "Transportation Mode",
+      "cr235_travellername": "Traveller Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Travel Requests",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Travel Requests (Views)",
+    "Name": "_cr235_table_views",
+    "RelatedEntityName": "Travel Requests",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1c58289e-e9d5-491b-acff-b82066191767": "Table Advanced Find View",
+      "23324d56-9e3b-4efc-a529-5728bfbb424a": "Active Tables",
+      "76475451-70ef-4a8f-9738-6057af80193a": "Table Associated View",
+      "d2b2b285-2813-4c66-8214-7eec7d3bcaee": "Inactive Tables",
+      "eaaf5a31-cce0-4e82-acac-aea0343e6867": "Table Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Travel Requests)",
+    "Name": "cr235_table_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Travel Requests"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Travel Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Travel Requests)",
+    "Name": "cr235_table_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Travel Requests"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Travel Requests",
+    "Type": "OptionSetInfo"
+  }
+]

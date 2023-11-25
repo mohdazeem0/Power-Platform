@@ -18,7 +18,7 @@
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =Parent.Width
-        ZIndex: =0
+        ZIndex: =1
 
         HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -61,7 +61,7 @@
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
-            Height: =75
+            Height: =50
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -70,6 +70,33 @@
             RadiusTopLeft: =8
             RadiusTopRight: =8
             ZIndex: =2
+
+            ButtonCanvas1 As Button:
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =NewForm(Form1);Navigate(Screen3,ScreenTransition.Fade)
+                Text: ="➕ New"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            ButtonCanvas1_1 As Button:
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =EditForm(Form1);Navigate(Screen3,ScreenTransition.Fade)
+                Text: ="✏️ Edit"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
 
         MainContainer1 As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.Light

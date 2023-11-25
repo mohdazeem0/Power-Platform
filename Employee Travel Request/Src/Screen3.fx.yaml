@@ -584,7 +584,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     MaxLength: =DataSourceInfo([@'Travel Requests'], DataSourceInfo.MaxLength, "cr235_travellername")
-                    Required: =false
+                    Required: =true
                     Update: =DataCardValue1.Value
                     Width: =444
                     WidthFit: =true

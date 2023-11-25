@@ -91,8 +91,9 @@
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: =EditForm(Form1);Navigate(Screen3,ScreenTransition.Fade)
+                OnSelect: =EditForm(Form1);Navigate(Screen3,ScreenTransition.CoverRight)
                 Text: ="✏️ Edit"
+                Visible: =Not(IsBlank(PowerAppsOneGrid2.Selected))
                 Width: =96
                 X: =0
                 Y: =0

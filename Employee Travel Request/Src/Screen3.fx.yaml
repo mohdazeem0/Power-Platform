@@ -85,6 +85,7 @@
                     Required: =true
                     Update: =Value(DataCardValue3.Value)
                     Width: =444
+                    WidthFit: =true
                     X: =0
                     Y: =0
                     ZIndex: =1
@@ -133,69 +134,6 @@
                         Y: =DataCardKey3.Y
                         ZIndex: =4
 
-                Destination_DataCard1 As typedDataCard.fluentV9TextualEditCard:
-                    BorderColor: =RGBA(245, 245, 245, 1)
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="cr235_destination"
-                    Default: =ThisItem.Destination
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Travel Requests'],DataSourceInfo.DisplayName,"cr235_destination")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =70
-                    MaxLength: =DataSourceInfo([@'Travel Requests'], DataSourceInfo.MaxLength, "cr235_destination")
-                    Required: =true
-                    Update: =DataCardValue4.Value
-                    Width: =444
-                    X: =2
-                    Y: =0
-                    ZIndex: =1
-
-                    DataCardKey4 As Text:
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =22
-                        Text: =Parent.DisplayName
-                        Weight: ='TextCanvas.Weight'.Semibold
-                        Width: =Parent.Width - 48
-                        Wrap: =false
-                        X: =24
-                        Y: =10
-                        ZIndex: =1
-
-                    "DataCardValue4 As 'Text input'":
-                        AccessibleLabel: =Parent.DisplayName
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =32
-                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                        Required: =Parent.Required
-                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                        Value: =Parent.Default
-                        Width: =Parent.Width - 48
-                        X: =24
-                        Y: =DataCardKey4.Y + DataCardKey4.Height + 4
-                        ZIndex: =2
-
-                    ErrorMessage3 As Text:
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =30
-                        Text: =Parent.Error
-                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =Parent.Width - 48
-                        Wrap: =true
-                        X: =24
-                        Y: =DataCardValue4.Y + DataCardValue4.Height
-                        ZIndex: =3
-
-                    StarVisible3 As Text:
-                        Align: ='TextCanvas.Align'.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =30
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        X: =0
-                        Y: =DataCardKey4.Y
-                        ZIndex: =4
-
                 "'Purpose of Travel_DataCard1' As typedDataCard.fluentV9TextualEditCard":
                     BorderColor: =RGBA(245, 245, 245, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -209,6 +147,7 @@
                     Required: =true
                     Update: =DataCardValue6.Value
                     Width: =444
+                    WidthFit: =true
                     X: =1
                     Y: =0
                     ZIndex: =1
@@ -259,6 +198,70 @@
                         Y: =DataCardKey7.Y
                         ZIndex: =4
 
+                Destination_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                    BorderColor: =RGBA(245, 245, 245, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cr235_destination"
+                    Default: =ThisItem.Destination
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Travel Requests'],DataSourceInfo.DisplayName,"cr235_destination")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Travel Requests'], DataSourceInfo.MaxLength, "cr235_destination")
+                    Required: =true
+                    Update: =DataCardValue4.Value
+                    Width: =444
+                    WidthFit: =true
+                    X: =2
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey4 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue4 As 'Text input'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey4.Y + DataCardKey4.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage3 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue4.Y + DataCardValue4.Height
+                        ZIndex: =3
+
+                    StarVisible3 As Text:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey4.Y
+                        ZIndex: =4
+
                 Departure_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
                     BorderColor: =RGBA(245, 245, 245, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -271,6 +274,7 @@
                     Required: =false
                     Update: =If(Not IsBlank(DateValue1.SelectedDate), Date(Year(DateValue1.SelectedDate), Month(DateValue1.SelectedDate), Day(DateValue1.SelectedDate)) + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), Value(Second(DateValue1.SelectedDate))))
                     Width: =444
+                    WidthFit: =true
                     X: =1
                     Y: =1
                     ZIndex: =1
@@ -363,6 +367,7 @@
                     Required: =false
                     Update: =DataCardValue5.Value
                     Width: =444
+                    WidthFit: =true
                     X: =2
                     Y: =1
                     ZIndex: =1
@@ -425,6 +430,7 @@
                     Required: =false
                     Update: =If(Not IsBlank(DateValue2.SelectedDate), Date(Year(DateValue2.SelectedDate), Month(DateValue2.SelectedDate), Day(DateValue2.SelectedDate)) + Time(Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), Value(Second(DateValue2.SelectedDate))))
                     Width: =444
+                    WidthFit: =true
                     X: =0
                     Y: =2
                     ZIndex: =1
@@ -517,6 +523,7 @@
                     Required: =false
                     Update: =DataCardValue7.Value
                     Width: =444
+                    WidthFit: =true
                     X: =1
                     Y: =2
                     ZIndex: =1
@@ -580,6 +587,7 @@
                     Required: =false
                     Update: =DataCardValue1.Value
                     Width: =444
+                    WidthFit: =true
                     X: =0
                     Y: =1
                     ZIndex: =2
@@ -655,4 +663,19 @@
                 X: =0
                 Y: =0
                 ZIndex: =1
+
+            ButtonCanvas2_1 As Button:
+                Appearance: ='ButtonCanvas.Appearance'.Outline
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =
+                Height: =32
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate(Screen1, ScreenTransition.Fade)
+                Text: ="Back"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
 

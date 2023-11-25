@@ -58,11 +58,11 @@
                 ZIndex: =1
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.Semibold
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =50
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -70,16 +70,16 @@
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
+            Width: =0
             ZIndex: =2
 
             ButtonCanvas1 As Button:
-                AlignInContainer: =AlignInContainer.Center
                 Appearance: ='ButtonCanvas.Appearance'.Subtle
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
-                OnSelect: =NewForm(Form1);Navigate(Screen3,ScreenTransition.Fade)
+                OnSelect: =NewForm(Form1);Navigate(Screen3,ScreenTransition.Cover)
                 Text: ="➕ New"
                 Width: =96
                 X: =0
@@ -87,7 +87,6 @@
                 ZIndex: =1
 
             ButtonCanvas1_1 As Button:
-                AlignInContainer: =AlignInContainer.Center
                 Appearance: ='ButtonCanvas.Appearance'.Subtle
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
@@ -101,32 +100,6 @@
                 X: =0
                 Y: =0
                 ZIndex: =2
-
-        FooterContainer2 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
-            DropShadow: =DropShadow.Light
-            Fill: =RGBA(255, 255, 255, 1)
-            FillPortions: =0
-            Height: =50
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            ZIndex: =3
-
-            "TabList4 As 'Tab list'.pcfdataset":
-                DisplayMode: =DisplayMode.Edit
-                Height: =55
-                Items: =Choices('Travel Requests'.'Approval Status')
-                LayoutMinHeight: =55
-                LayoutMinWidth: =280
-                Width: =280
-                X: =0
-                Y: =0
-                ZIndex: =1
 
         MainContainer1 As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.Light
